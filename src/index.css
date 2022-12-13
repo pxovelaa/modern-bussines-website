@@ -112,6 +112,18 @@
   box-shadow: var(--card-shadow);
 }
 
+.clients-img {
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(0); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all 0.8s ease-in-out;
+}
+
+.clients-img:hover {
+  filter: hue-rotate(360deg);
+  -webkit-filter: hue-rotate(360deg);
+  -webkit-transform: scale(1.01);
+}
+
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }
